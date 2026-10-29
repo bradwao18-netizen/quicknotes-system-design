@@ -1,0 +1,99 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #1a202c;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25.rem;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #cbd5e0;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #2b6cb0;
+}
+
+.status-message {
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.status-message.loading { color: #d69e2e; }
+.status-message.success { color: #38a169; }
+.status-message.error { color: #e53e3e; }
+
+#notes-list {
+    list-style: none;
+    padding: 0;
+}
+
+#notes-list li {
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 4px;
+    position: relative;
+}
+
+#notes-list li h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+#notes-list li p {
+    margin: 0 0 0.75rem 0;
+}
+
+.delete-btn {
+    background-color: #e53e3e;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.delete-btn:hover:not(:disabled) {
+    background-color: #c53030;
+}
